@@ -36,26 +36,22 @@
     margin-top: 10px;
     align-items: center;
 }
-#purple{
-    width: 100px;
-    height: 100px;
-    background-color: purple;
-    border-radius: 100%;
-    margin: auto;
-    margin-top: 10px;
-    align-items: center;
-}
-.quitar{
-    display: none;
-}
 .ilu{
     box-shadow: 0px 0px 15px 6px rgb(255, 255, 160);
 }
 .boton{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 20px;
     justify-content: center;
-    padding: 10px
+}
+button{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    margin-left: 20px;
 }
 button:hover{
     background-color: rgb(219, 219, 219);

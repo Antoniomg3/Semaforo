@@ -7,7 +7,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 
 
-	const [encendido, setEncendido, AñadirMorado, setMorado] = useState("");
+	const [encendido, setEncendido, AñadirMorado] = useState("");
 
 
 	function cambioColor() {
@@ -27,11 +27,9 @@ const Home = () => {
 				<div className={encendido == "rojo" ? "ilu" : "no"} id="red" onClick={() => setEncendido("rojo")}></div>
 				<div className={encendido == "amarillo" ? "ilu" : "no"} id="yellow" onClick={() => setEncendido("amarillo")}></div>
 				<div className={encendido == "verde" ? "ilu" : "no"} id="green" onClick={() => setEncendido("verde")}></div>
-				{/* <div className={AñadirMorado == "morado" ? "purple" : "añadir"} id="purple" onClick={() => setMorado("morado")}></div> */}
 			</div>
 			<div className="boton">
 				<button onClick={cambioColor}>Click aquí</button>
-				{/* <button onClick={() => setMorado("morado")}>Añadir a Morado</button> */}
 			</div>
 		</div>
 	);
